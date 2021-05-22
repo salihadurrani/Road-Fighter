@@ -139,7 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ErroeHandling.cpp" />
+    <ClCompile Include="GamePlay.cpp" />
+    <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Road-Fighter.cpp" />
+    <ClCompile Include="Screens.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ErrorHandling.h" />
+    <ClInclude Include="GamePlay.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Screens.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

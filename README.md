@@ -1,13 +1,14 @@
 # Road-Fighter
-
+A game to soar through the rough and tough places of hard and scorching path.
+come and guage your skils of driving through.
 
 ## Objectives
 * (a) Test the student’s ability to use OOP concepts.
 * (b) Test the student’s ability work with external libraries.
 * (c) Test the student’s ability to work in a team.
 
-## UML of the pplicatin which is designed by Saliha Durrani
-![](UML/Output/Road-Fighter.png.png)
+## UML of the Aplicatin
+![](UML/Output/Road-Fighter.png)
 
 ## Features
 The main feature of the game is ride your car to end point and tackele all the obsticals.

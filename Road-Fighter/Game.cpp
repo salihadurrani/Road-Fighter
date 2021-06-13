@@ -68,9 +68,9 @@ int Game::__StartPage()
 {
 	auto cursor_pgu = GraphEngine::LoadUnitFromFile("Res/cursor_gb.bmp", true);
 	SDL_Point start_size;
-	auto start_pgu = GraphEngine::StringToUnit(&start_size, "Start");
+	auto start_pgu = GraphEngine::StringToUnit(&start_size, "Start Road Fighter");
 	SDL_Point quit_size;
-	auto quit_pgu = GraphEngine::StringToUnit(&quit_size, "Quit");
+	auto quit_pgu = GraphEngine::StringToUnit(&quit_size, "Exit Road Fighter");
 
 	auto sound = AudioEngine::LoadSEAudioFromFile("Res/button.wav");
 
@@ -480,9 +480,9 @@ void Game::__FinshedBGMCB()
 int Game::__EndPage()
 {
 	SDL_Point again_size;
-	auto again_pgu = GraphEngine::StringToUnit(&again_size, "Retry");
+	auto again_pgu = GraphEngine::StringToUnit(&again_size, "Retry Road Fighter");
 	SDL_Point quit_size;
-	auto quit_pgu = GraphEngine::StringToUnit(&quit_size, "Quit");
+	auto quit_pgu = GraphEngine::StringToUnit(&quit_size, "Exit Road Fighter");
 	auto cursor_pgu = GraphEngine::LoadUnitFromFile("Res/cursor_gb.bmp", true);
 
 	auto sound = AudioEngine::LoadSEAudioFromFile("Res/button.wav");

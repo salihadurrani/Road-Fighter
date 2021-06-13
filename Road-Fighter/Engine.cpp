@@ -19,9 +19,9 @@ bool GraphEngine::Init(void)
 
 	//init win
 	sm_pWin = SDL_CreateWindow(u8"Road Fighter",
-							   SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-							   256 * sm_nWinSizeTimes, 224 * sm_nWinSizeTimes,
-							   SDL_WINDOW_SHOWN);
+		SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+		256 * sm_nWinSizeTimes, 224 * sm_nWinSizeTimes,
+		SDL_WINDOW_SHOWN);
 	if (sm_pWin == nullptr)
 	{
 		return false;
@@ -383,10 +383,13 @@ GraphUnitPack* GraphEngine::LoadSqUnitPackFromMem(void* mem, unsigned int mem_si
 
 void GraphEngine::FreeUnit(GraphUnit* gu)
 {
-	delete gu->prtSrc;
-	SDL_DestroyTexture(gu->pTex);
-	delete gu;
-	gu = nullptr;
+	if (gu->prtSrc != nullptr) 
+	{
+		delete gu->prtSrc;
+		SDL_DestroyTexture(gu->pTex);
+		delete gu;
+		gu = nullptr;
+	}
 }
 
 void GraphEngine::FreeUnitPack(GraphUnitPack* gup)

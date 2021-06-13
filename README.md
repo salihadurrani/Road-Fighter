@@ -7,7 +7,7 @@
 * (c) Test the student’s ability to work in a team.
 
 ## UML of the pplicatin which is designed by Saliha Durrani
-![](UML/Output/Road-Fighter.png.png)
+![](UML/Output/Road-Fighter.png)
 
 ## Features
 The main feature of the game is ride your car to end point and tackele all the obsticals.

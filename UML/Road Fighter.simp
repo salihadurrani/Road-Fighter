@@ -1,0 +1,2183 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp66ee377816704e17bac165a91308d9e8">
+  <meta>
+    <name>Road Fighter</name>
+    <authors> Saliha Durrani (2020427)</authors>
+    <description>The UML diagram is design for Road Fighter game, to ill what about ai</description>
+  </meta>
+  <counters models="2">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>11</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>33</value>
+      </counter>
+      <counter>
+        <item-type type-id="containment" type="Containment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>13</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlCompositeStructureDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlDeploymentDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>146</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-dad404700afd4c96aae522538ce30915" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-0a8be90e017c460382e592c175d38192" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="bool" tid="" name="bool" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="const char*" tid="" name="const char*" description="" />
+      <type id="void*" tid="" name="void*" description="" />
+      <type id="unsigned int" tid="" name="unsigned int" description="" />
+      <type id="SEAudio*" tid="" name="SEAudio*" description="" />
+      <type id="Mix_Music*" tid="" name="Mix_Music*" description="" />
+      <type id="GraphUnitPack*" tid="" name="GraphUnitPack*" description="" />
+      <type id="SDL_Point&amp;" tid="" name="SDL_Point&amp;" description="" />
+      <type id="SDL_Point" tid="" name="SDL_Point" description="" />
+      <type id="SDL_Rect*" tid="" name="SDL_Rect*" description="" />
+      <type id="SDL_Texture*" tid="" name="SDL_Texture*" description="" />
+      <type id="std::vector&lt;GraphUnit*&gt;" tid="" name="std::vector&lt;GraphUnit*&gt;" description="" />
+      <type id="GraphUnit*" tid="" name="GraphUnit*" description="" />
+      <type id="SDL_Color" tid="" name="SDL_Color" description="" />
+      <type id="SDL_Point*" tid="" name="SDL_Point*" description="" />
+      <type id="SDL_Window*" tid="" name="SDL_Window*" description="" />
+      <type id="SDL_Renderer*" tid="" name="SDL_Renderer*" description="" />
+      <type id="TTF_Font*" tid="" name="TTF_Font*" description="" />
+      <type id="std::vector&lt;InBuffGraphUnit&gt;" tid="" name="std::vector&lt;InBuffGraphUnit&gt;" description="" />
+      <type id="std::map&lt;std::string, int&gt;" tid="" name="std::map&lt;std::string, int&gt;" description="" />
+      <type id="std::vector&lt;Car&gt;" tid="" name="std::vector&lt;Car&gt;" description="" />
+      <type id="SDL_Event" tid="" name="SDL_Event" description="" />
+      <type id="Uint32" tid="" name="Uint32" description="" />
+      <type id="std::string&amp;" tid="" name="std::string&amp;" description="" />
+      <type id="std::default_random_engine" tid="" name="std::default_random_engine" description="" />
+      <type id="Mix_Chunk*" tid="" name="Mix_Chunk*" description="" />
+      <type id="void" tid="" name="void" description="" />
+      <type id="char*" tid="" name="char*" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p2f42f7d4e5a044cfab562ee55bc59987_655919587" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>06/13/2021 09:49:59</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="83853bc2b0e042a0bbbf5eb0a24ffb32" cid="PKG001" type="package" name="" style-class="" creator="" creation-date="06/13/2021 09:50:37" />
+      </abstract-items>
+      <sub-models>
+        <model id="pbdd3feb9bdd743ddac0ebb49715e156e_622999706" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author> </author>
+            </authors>
+            <description />
+            <creation-date>06/13/2021 09:50:37</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <abstract-items>
+            <item id="5ec20ff3285f4aa3b03750bfba5b9b55" cid="C001" type="class" name="AudioEngine" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tvca05148b468d40889e3ee4d1a18f66e0" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="94016ed4fffa4d1cb4b64f4611c565c2" />
+                <owned-item ref="571a61f974144f8d9b3734a8301281d4" />
+                <owned-item ref="b8686b50e8674d0e8e3c5658a6f89a1b" />
+              </owned-items>
+              <attributes>
+                <attribute id="a5b25c276c8604471b18f34aa29d5d9b3932" cid="PROP001" name="sm_pMusBGM" creation-date="06/13/2021 09:50:36" property-ref="94016ed4fffa4d1cb4b64f4611c565c2" />
+                <attribute id="a7026f33fb1da4eb0a72e76413a3c5c92932" cid="PROP002" name="sm_nBGMVolume" creation-date="06/13/2021 09:50:36" property-ref="571a61f974144f8d9b3734a8301281d4" />
+                <attribute id="aaccf9c4f29844e40b28b9072654feb99933" cid="PROP003" name="sm_bChannelUsed" creation-date="06/13/2021 09:50:36" property-ref="b8686b50e8674d0e8e3c5658a6f89a1b" />
+              </attributes>
+              <operations>
+                <operation id="o8aa7635bffd54d05a85acaba09c86238922" cid="OP006" name="PauseBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" static="true" />
+                <operation id="oa55f2da156cd4b4b953f5da4889914d8922" cid="OP012" name="LoadSEAudioFromFile" creation-date="06/13/2021 09:50:36" type="SEAudio*" type-id="SEAudio*" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p0b6217741cf9433e9de9df0d79027481" name="filename" type="const char*" type-id="const char*" />
+                  </parameters>
+                </operation>
+                <operation id="o28a642b901ac4ea5b49aac294e7e39a6922" cid="OP013" name="LoadSEAudioFromMem" creation-date="06/13/2021 09:50:36" type="SEAudio*" type-id="SEAudio*" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p78f37bb8297e4669a09da8f4cf447a11" name="mem" type="void*" type-id="void*" />
+                    <parameter id="p70460186626b46c386b10b7008bd0d31" name="size" type="unsigned int" type-id="unsigned int" />
+                  </parameters>
+                </operation>
+                <operation id="oa612834cb71f489c848752f7f85f43a7922" cid="OP014" name="FreeSEAudio" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="pf5f1a81c3bae4c239f23e335638e5d5d" name="se" type="SEAudio*" type-id="SEAudio*" />
+                  </parameters>
+                </operation>
+                <operation id="o1c34f48caa924dceb8cecb32a7c9489d922" cid="OP015" name="StopAllSEAudio" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" static="true" />
+                <operation id="of59c62b98c4f40f9a75b8dd4d36a5f7e934" cid="OP016" name="__FindEmptyChannel" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private" static="true" />
+                <operation id="o5814fabcedd04a7c888d622f4041dfc3940" cid="OP077" name="Init" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (Mix_Init(MIX_INIT_OGG | MIX_INIT_MID) == 0)
+	{
+		return false;
+	}
+	Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 4096);
+	Mix_AllocateChannels(8);
+	return false;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o58b28632936d4efbba8ce33d59ca254f943" cid="OP078" name="Quit" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_AllocateChannels(0);
+	Mix_FreeMusic(sm_pMusBGM);
+	Mix_CloseAudio();
+	Mix_Quit();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob38427c97d084c94a14c6ec3a8102d22943" cid="OP079" name="PlayBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p71637f1ffcbd43a3a94e985559b48005" name="fade_ms" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_PlayMusic(sm_pMusBGM, 0);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="of9ddda897f194e7bb787e0cf4c9076eb943" cid="OP080" name="RewindBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_RewindMusic();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o06bbf98a0bff4efabc89682db234ad4a943" cid="OP081" name="StopBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p3fed6cb3b61d43f68fe9911827e22dc1" name="fade_ms" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_FadeOutMusic(fade_ms);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o59829bf3942f432d95acbdcefb6ce7ab943" cid="OP082" name="PauseBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p3b780207dbb345d9ba76bf4ab2c05ebe" name="?" type="void" type-id="void" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_PauseMusic();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ofc248bb00545495995d3d76e1bb36b85944" cid="OP083" name="ResumeBGM" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_ResumeMusic();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obc3764d8f27041309ce6600205fc5502944" cid="OP084" name="LoadBGMFromFile" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p719aa004c8a04abe80ae002b3a7e30cc" name="filename" type="const char*" type-id="const char*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	             
+	if (sm_pMusBGM != nullptr)
+	{
+		Mix_FreeMusic(sm_pMusBGM);
+	}
+
+	              
+	sm_pMusBGM = Mix_LoadMUS(filename);
+	if (sm_pMusBGM == nullptr)
+	{
+		std::cout &lt;&lt; "LoadBGMFromFile() couldn't load music from file." &lt;&lt; std::endl;
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o77455fd5bbff459e9e005662b4ec1c88944" cid="OP085" name="LoadBGMFromMem" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p6d0d36b76d024c1399c3ffd1c46835a5" name="mem" type="void*" type-id="void*" />
+                    <parameter id="p2c27299f06314fbaa789ec4a845e6748" name="size" type="unsigned int" type-id="unsigned int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	auto rw = SDL_RWFromMem(mem, size);
+	if (rw == nullptr)
+	{
+		std::cout &lt;&lt; "LoadBGMFromMem() couldn't load rwops from mem." &lt;&lt; std::endl;
+		return;
+	}
+	sm_pMusBGM = Mix_LoadMUS_RW(rw, 1);         
+	if (sm_pMusBGM == nullptr)
+	{
+		std::cout &lt;&lt; "LoadBGMFromMem() couldn't load music from rwops." &lt;&lt; std::endl;
+		return;   
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oadfd583cd7c04d34ae225e08bd680bbf944" cid="OP086" name="BGMVolume" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p57841a07554e410e914399af163361ca" name="new_volume" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (new_volume &lt; 0 || new_volume&gt;128)
+	{
+		std::cout &lt;&lt; "BGMVolume() new volume out of range.It have been set to 64." &lt;&lt; std::endl;
+		Mix_VolumeMusic(64);
+		sm_nBGMVolume = 64;
+	}
+	else
+	{
+		Mix_VolumeMusic(new_volume);
+		sm_nBGMVolume = new_volume;
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc8dde079b1cb4351972c031058226d49944" cid="OP087" name="BGMVolume" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return sm_nBGMVolume;
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="94016ed4fffa4d1cb4b64f4611c565c2" cid="PROP001" type="property" name="sm_pMusBGM" style-class="" owner="5ec20ff3285f4aa3b03750bfba5b9b55" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="Mix_Music*" type-id="Mix_Music*" />
+              <property />
+            </item>
+            <item id="571a61f974144f8d9b3734a8301281d4" cid="PROP002" type="property" name="sm_nBGMVolume" style-class="" owner="5ec20ff3285f4aa3b03750bfba5b9b55" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="b8686b50e8674d0e8e3c5658a6f89a1b" cid="PROP003" type="property" name="sm_bChannelUsed" style-class="" owner="5ec20ff3285f4aa3b03750bfba5b9b55" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="ea48023f175e4a52b63546f18dfeabbc" cid="C002" type="class" name="Car" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvd200a935149b4bd19f3c00fb84042d42" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="bb76a87974cc4b90a71de16cb84a6811" />
+                <owned-item ref="0d3468dccefb40789b8cda17686129e7" />
+                <owned-item ref="0b094e23c1544fd4bab51d8d09296736" />
+                <owned-item ref="e0c7a3cc7b05413aadce2752ae839057" />
+              </owned-items>
+              <attributes>
+                <attribute id="ada03cab39e694723bf7fb1f1534276a7935" cid="PROP004" name="m_ptPos" creation-date="06/13/2021 09:50:36" property-ref="bb76a87974cc4b90a71de16cb84a6811" />
+                <attribute id="a5d0cd75255be4be3adf06323cb6467ea935" cid="PROP005" name="m_bIsPlayer" creation-date="06/13/2021 09:50:36" property-ref="0d3468dccefb40789b8cda17686129e7" />
+                <attribute id="a5b5300950bff4bdeb3c913f977c8797e935" cid="PROP006" name="m_pgup" creation-date="06/13/2021 09:50:36" property-ref="0b094e23c1544fd4bab51d8d09296736" />
+                <attribute id="a36f8292ef8cc43a19ee4fb5a79a77a42935" cid="PROP007" name="m_nTexId" creation-date="06/13/2021 09:50:36" property-ref="e0c7a3cc7b05413aadce2752ae839057" />
+              </attributes>
+              <operations>
+                <operation id="o7562dd597477488180cffa6b1e962556934" cid="OP017" name="Car" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pef58d080355844b0a590c71540007d6b" name="pgup" type="GraphUnitPack*" type-id="GraphUnitPack*" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="of8c4dc4219564d188826f431bc2ce32e945" cid="OP088" name="IsPlayer" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return m_bIsPlayer;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o186a0b7643cd4c25a2fbc9170a662bee945" cid="OP089" name="IsPlayer" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p0ea31e09b09141f59fd90800ad6a5387" name="is" type="bool" type-id="bool" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	m_bIsPlayer = is;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o717a93025a434933a5cf52e8b0c6b9ec945" cid="OP090" name="AddToBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (m_bIsPlayer)
+	{
+		GraphEngine::AddSquareToBuff(m_ptPos.x, m_ptPos.y, m_pgup-&gt;vec_pguContent[20], false);
+	}
+	else
+	{
+		GraphEngine::AddSquareToBuff(m_ptPos.x, m_ptPos.y,
+			m_pgup-&gt;vec_pguContent[m_nTexId], false);
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o96dc4fdf1cde44a89d3c01656f50615a945" cid="OP091" name="Move" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p278005446f424ac299a79e9bceefca3f" name="x" type="int" type-id="int" />
+                    <parameter id="p7a6d9a1e395648b6851edb396c4324b0" name="y" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	m_ptPos.x += x;
+	m_ptPos.y += y;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o1a27f5ed26774a3a9636cae335ece083945" cid="OP092" name="MoveTo" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pbb0a156db87545beb492137c0f33797c" name="x" type="int" type-id="int" />
+                    <parameter id="pf901d1bdf92a4362b37afb0ecdf4df1f" name="y" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	m_ptPos = { x,y };
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="occ9139a6fa8c4fa3879c5e526c3bde56945" cid="OP093" name="GetPos" creation-date="06/13/2021 09:50:36" type="SDL_Point&amp;" type-id="SDL_Point&amp;" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return m_ptPos;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o45fdac03428a49a8aa343eaa6b7607d8945" cid="OP094" name="SetTexId" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pb873e1075ca94adbbbe916f77a2a4a25" name="id" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	m_nTexId = id;
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="bb76a87974cc4b90a71de16cb84a6811" cid="PROP004" type="property" name="m_ptPos" style-class="" owner="ea48023f175e4a52b63546f18dfeabbc" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="SDL_Point" type-id="SDL_Point" />
+              <property />
+            </item>
+            <item id="0d3468dccefb40789b8cda17686129e7" cid="PROP005" type="property" name="m_bIsPlayer" style-class="" owner="ea48023f175e4a52b63546f18dfeabbc" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="0b094e23c1544fd4bab51d8d09296736" cid="PROP006" type="property" name="m_pgup" style-class="" owner="ea48023f175e4a52b63546f18dfeabbc" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="GraphUnitPack*" type-id="GraphUnitPack*" />
+              <property />
+            </item>
+            <item id="e0c7a3cc7b05413aadce2752ae839057" cid="PROP007" type="property" name="m_nTexId" style-class="" owner="ea48023f175e4a52b63546f18dfeabbc" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="7a50e0c6923b4007a29d950254649a6f" cid="C003" type="class" name="GraphUnit" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <stereotypes>
+                <stereotype name="struct" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tva23c6082377c4d2da2884d88facf943c" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="7a50e0c6923b4007a29d950254649a6f_struct_c" type="struct" ref="" />
+              </stereotype-instances>
+              <owned-items>
+                <owned-item ref="0409fc482ac54b6f8ebd477387f4e4b1" />
+                <owned-item ref="3bf777ed1f1443398f67ad4996d24d93" />
+              </owned-items>
+              <attributes>
+                <attribute id="a670760482b04453da5d27672d052f941935" cid="PROP008" name="prtSrc" creation-date="06/13/2021 09:50:36" property-ref="0409fc482ac54b6f8ebd477387f4e4b1" />
+                <attribute id="a815bcb1d9afc4c778c6013fd535ecedd935" cid="PROP009" name="pTex" creation-date="06/13/2021 09:50:36" property-ref="3bf777ed1f1443398f67ad4996d24d93" />
+              </attributes>
+            </item>
+            <item id="0409fc482ac54b6f8ebd477387f4e4b1" cid="PROP008" type="property" name="prtSrc" style-class="" owner="7a50e0c6923b4007a29d950254649a6f" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="SDL_Rect*" type-id="SDL_Rect*" />
+              <property />
+            </item>
+            <item id="3bf777ed1f1443398f67ad4996d24d93" cid="PROP009" type="property" name="pTex" style-class="" owner="7a50e0c6923b4007a29d950254649a6f" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="SDL_Texture*" type-id="SDL_Texture*" />
+              <property />
+            </item>
+            <item id="0c596a0e11d04691957fd47d63a25b47" cid="C004" type="class" name="GraphUnitPack" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <stereotypes>
+                <stereotype name="struct" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv023eaf00354a4140ae8e9f53ec442086" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="0c596a0e11d04691957fd47d63a25b47_struct_c" type="struct" ref="" />
+              </stereotype-instances>
+              <owned-items>
+                <owned-item ref="a646776cb1954c1c89c63791a1d3eaaa" />
+              </owned-items>
+              <attributes>
+                <attribute id="a992391c70cef44ef9e4cf719fcb44e5d935" cid="PROP010" name="vec_pguContent" creation-date="06/13/2021 09:50:36" property-ref="a646776cb1954c1c89c63791a1d3eaaa" />
+              </attributes>
+            </item>
+            <item id="a646776cb1954c1c89c63791a1d3eaaa" cid="PROP010" type="property" name="vec_pguContent" style-class="" owner="0c596a0e11d04691957fd47d63a25b47" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="std::vector&lt;GraphUnit*&gt;" type-id="std::vector&lt;GraphUnit*&gt;" />
+              <property />
+            </item>
+            <item id="0a722bb85ff04be5b85b5dd4cd50410d" cid="C005" type="class" name="GraphEngine" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv9c3ad31234224df58a4134159879ca3c" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="9ab03bffdc924819a9450562ddd03543" />
+                <owned-item ref="131fd8e914c14167beef8f8fbf73650d" />
+                <owned-item ref="a4f1d565423040ceb467f9d84328cf80" />
+                <owned-item ref="5fa3c9e482514cbbb4e6799c3254cc08" />
+                <owned-item ref="f929c640d7d74e30b5f08ad231d0ec8d" />
+                <owned-item ref="d7ca14a2a32c431ab70cd05f437890b8" />
+                <owned-item ref="5f6db180dda34a1ba22888f19aef9588" />
+                <owned-item ref="04eb429b2f9a424d85db9391c975cf4b" />
+              </owned-items>
+              <attributes>
+                <attribute id="a30bf72065df14206a0df41f669609592935" cid="PROP011" name="SQUARES_X_COUNT" creation-date="06/13/2021 09:50:36" property-ref="9ab03bffdc924819a9450562ddd03543" />
+                <attribute id="aea3650bd814241daa9ba37f00cc81af2935" cid="PROP012" name="SQUARES_Y_COUNT" creation-date="06/13/2021 09:50:36" property-ref="131fd8e914c14167beef8f8fbf73650d" />
+                <attribute id="a5af399560c6240bb9fc443a3bc2442ec935" cid="PROP013" name="SQUARES_COUNT" creation-date="06/13/2021 09:50:36" property-ref="a4f1d565423040ceb467f9d84328cf80" />
+                <attribute id="ab2a54b307ad543bdaac6605107bcef46937" cid="PROP014" name="sm_pWin" creation-date="06/13/2021 09:50:36" property-ref="5fa3c9e482514cbbb4e6799c3254cc08" />
+                <attribute id="a9efa3f0a5a8d43a49d9269e02df5552a937" cid="PROP015" name="sm_pRen" creation-date="06/13/2021 09:50:36" property-ref="f929c640d7d74e30b5f08ad231d0ec8d" />
+                <attribute id="aef1f9580e5e0488c9efdeab787f4efce937" cid="PROP016" name="sm_nWinSizeTimes" creation-date="06/13/2021 09:50:36" property-ref="d7ca14a2a32c431ab70cd05f437890b8" />
+                <attribute id="ae4796b041dfc44b7bed8f0409e42ca29937" cid="PROP017" name="sm_pFont" creation-date="06/13/2021 09:50:36" property-ref="5f6db180dda34a1ba22888f19aef9588" />
+                <attribute id="a1534631d76974eb09f25ee08af778a33938" cid="PROP020" name="sm_vec_ibguBuff" creation-date="06/13/2021 09:50:36" property-ref="04eb429b2f9a424d85db9391c975cf4b" />
+              </attributes>
+              <operations>
+                <operation id="o780c3bb654ad4fadb026499daeda3300935" cid="OP025" name="Init" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="public" static="true" />
+                <operation id="o63b3d2c829654744b2e5f7c687a234dc936" cid="OP032" name="PresentBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" static="true" />
+                <operation id="o89cc37fa925641238c2c05281a0bdc58936" cid="OP033" name="ClearBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" static="true" />
+                <operation id="obdfef43c75ea4b43ba623eb1e9a7b8db945" cid="OP095" name="Init" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <parameters>
+                    <parameter id="pe409daf0a23049609c937d4e4d25b2cb" name="?" type="void" type-id="void" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+	{
+		return false;
+	}
+
+	          
+	sm_pWin = SDL_CreateWindow(u8"Road Fighter",
+							   SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+							   256 * sm_nWinSizeTimes, 224 * sm_nWinSizeTimes,
+							   SDL_WINDOW_SHOWN);
+	if (sm_pWin == nullptr)
+	{
+		return false;
+	}
+
+	               
+	sm_pRen = SDL_CreateRenderer(sm_pWin, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+	if (sm_pRen == nullptr)
+	{
+		return false;
+	}
+
+	           
+	if (TTF_Init() != 0)
+	{
+		return false;
+	}
+	sm_pFont = TTF_OpenFont("Res/trebuc.ttf", 64);
+	if (sm_pFont == nullptr)
+	{
+		std::cout &lt;&lt; "Can't load font trebuc.ttf font" &lt;&lt; std::endl;
+		sm_pFont = TTF_OpenFont("font.ttf", 16);
+		if (sm_pFont == nullptr)
+		{
+			std::cout &lt;&lt; "Can't load font font.ttf" &lt;&lt; std::endl;
+			return false;
+		}
+	}
+	      
+	return true;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa3904ba596ba4b27aed1376eabeaf0bc945" cid="OP096" name="Quit" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_DestroyRenderer(sm_pRen);
+	SDL_DestroyWindow(sm_pWin);
+	SDL_Quit();
+	ClearBuff();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o790ad7d2f84a4271bd13bf9c247c32b3945" cid="OP097" name="ChangeWinSize" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p2465b65da66a49ddb82336fffa0bedf7" name="times" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	sm_nWinSizeTimes = times;
+	SDL_SetWindowSize(sm_pWin, 256 * times, 224 * times);
+	SDL_SetWindowPosition(sm_pWin, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o2cf2bc66f1bc4bf2af6efcc42c22da9a945" cid="OP098" name="ChangeWinTitle" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p9d05679022514ab88615fd549dab8452" name="title" type="const char*" type-id="const char*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_SetWindowTitle(sm_pWin, title);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="of7844d98b64b419da6e3dbe644ca48b8945" cid="OP099" name="AddSquareToBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p70947ac73bf64ece805e452da2e1a5e0" name="sq_x" type="int" type-id="int" />
+                    <parameter id="pd0d25200fa4045f3a2726a2a6c198b74" name="sq_y" type="int" type-id="int" />
+                    <parameter id="p229f64bab92d4978959adaef315eefe2" name="unit" type="GraphUnit*" type-id="GraphUnit*" />
+                    <parameter id="p62568f7a45fd46a5af826959302804a1" name="bottom" type="bool" type-id="bool" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	int size = 16 * sm_nWinSizeTimes;
+	InBuffGraphUnit ibgu;
+	ibgu.pgu = unit;
+	ibgu.prtDst = new(std::nothrow) SDL_Rect;
+	if (ibgu.prtDst == nullptr)
+	{
+		std::cout &lt;&lt; "AddSquareToBuff() failed to allocate mem for ibgu.prtDst" &lt;&lt; std::endl;
+		return;
+	}
+	*(ibgu.prtDst) = { sq_x * size,sq_y * size,size,size };
+	if (bottom)
+	{
+		sm_vec_ibguBuff.insert(sm_vec_ibguBuff.begin(), ibgu);
+	}
+	else
+	{
+		sm_vec_ibguBuff.push_back(ibgu);
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oce5ab0abb8ae49e4a6e4bb60c69e68f7946" cid="OP100" name="AddSquareToBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p79c23f583b404bb4a3d0266b595164b3" name="sq_index" type="int" type-id="int" />
+                    <parameter id="p0e103f584df44829ba2068c4036316df" name="unit" type="GraphUnit*" type-id="GraphUnit*" />
+                    <parameter id="p11d1dec5d0384a0e826931c695efcba7" name="bottom" type="bool" type-id="bool" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	auto pt = __IndexToPoint(sq_index);
+	AddSquareToBuff(pt.x, pt.y, unit, bottom);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o051d626a72f84cf387e6e38cf0e15c86946" cid="OP101" name="AddToBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p58de9b4d074141ad940aae9fc8a380d2" name="x" type="int" type-id="int" />
+                    <parameter id="pb9f373b237bc49848cee9b4f5b5be3d5" name="y" type="int" type-id="int" />
+                    <parameter id="p8fc8d0e02d5f4dd9b8dbe868cc4f3f72" name="w" type="int" type-id="int" />
+                    <parameter id="p7719e94d7246487f81d2331afc02a29a" name="h" type="int" type-id="int" />
+                    <parameter id="p76012a36e1aa441bbf0b03eb72e44e63" name="unit" type="GraphUnit*" type-id="GraphUnit*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	InBuffGraphUnit ibgu;
+	ibgu.pgu = unit;
+	ibgu.prtDst = new(std::nothrow) SDL_Rect;
+	if (ibgu.prtDst == nullptr)
+	{
+		std::cout &lt;&lt; "AddSquareToBuff() failed to allocate mem for ibgu.prtDst" &lt;&lt; std::endl;
+		return;
+	}
+	*(ibgu.prtDst) = { x * sm_nWinSizeTimes,y * sm_nWinSizeTimes,
+		w * sm_nWinSizeTimes,h * sm_nWinSizeTimes };
+	sm_vec_ibguBuff.push_back(ibgu);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="of277065438e341ed98804a071d7f1c1c946" cid="OP102" name="PresentBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p469f8de77a654dc7b934b11fe157e9b8" name="?" type="void" type-id="void" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	int square_size = 16 * sm_nWinSizeTimes;
+
+	SDL_RenderClear(sm_pRen);
+
+	      
+	for (auto&amp; ibgu : sm_vec_ibguBuff)
+	{
+		SDL_RenderCopy(sm_pRen, ibgu.pgu-&gt;pTex, ibgu.pgu-&gt;prtSrc, ibgu.prtDst);
+	}
+
+	         
+	SDL_RenderPresent(sm_pRen);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o44322f7cfcc34e1a9a1ea5207f459a4c946" cid="OP103" name="ClearBuff" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pc9f2a0fcf2a44ac8b111c0f84c16a025" name="?" type="void" type-id="void" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	for (auto&amp; ibgu : sm_vec_ibguBuff)
+	{
+		delete ibgu.prtDst;
+		ibgu.prtDst = nullptr;
+	}
+	sm_vec_ibguBuff.clear();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o2f9e184f44c6406d98d4816165cb020d946" cid="OP104" name="LoadUnitFromFile" creation-date="06/13/2021 09:50:36" type="GraphUnit*" type-id="GraphUnit*" visibility="private">
+                  <parameters>
+                    <parameter id="p5fb864aa0dc94ed99324bbfb4948a305" name="filename" type="const char*" type-id="const char*" />
+                    <parameter id="p43e1224095b246eea8b6507c48bd36e1" name="use_key" type="bool" type-id="bool" />
+                    <parameter id="p78dd5315ff3b4430bf1fa30ea0e34f96" name="key" type="SDL_Color" type-id="SDL_Color" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_Surface* sur = SDL_LoadBMP(filename);
+	if (sur == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromFile() couldn't load file: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_SetColorKey(sur, use_key, SDL_MapRGB(sur-&gt;format, key.r, key.g, key.b));
+	SDL_Texture* tex = SDL_CreateTextureFromSurface(sm_pRen, sur);
+	if (tex == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromFile() failed to create sdl_texture: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		SDL_FreeSurface(sur);
+		return nullptr;
+	}
+
+	SDL_FreeSurface(sur);
+
+	auto pgu = new(std::nothrow) GraphUnit;                     
+	if (pgu == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() couldb't allocate mem for graphunit" &lt;&lt; std::endl;
+		SDL_DestroyTexture(tex);
+		return nullptr;
+	}
+	pgu-&gt;pTex = tex;
+	pgu-&gt;prtSrc = nullptr;
+
+	return pgu;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o06cd1e72ec7f4af9896bac0b44be6bf8946" cid="OP105" name="LoadUnitFromMem" creation-date="06/13/2021 09:50:36" type="GraphUnit*" type-id="GraphUnit*" visibility="private">
+                  <parameters>
+                    <parameter id="pf1a96a6a884442baa511a14c4703ede5" name="mem" type="void*" type-id="void*" />
+                    <parameter id="pbab374b11351491f8380e9dc935255ab" name="mem_size" type="unsigned int" type-id="unsigned int" />
+                    <parameter id="peb7942721d604e07a2b1a0dc47aa63e7" name="use_key" type="bool" type-id="bool" />
+                    <parameter id="p4e839e7060f147329481df337e4ec9db" name="key" type="SDL_Color" type-id="SDL_Color" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (mem == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() null mem pointer" &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_RWops* rw = SDL_RWFromMem(mem, mem_size);
+	if (rw == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() failed read mem" &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_Surface* sur = SDL_LoadBMP_RW(rw, true);                
+	if (sur == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() failed to create sdL_surface: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_SetColorKey(sur, use_key, SDL_MapRGB(sur-&gt;format, key.r, key.g, key.b));
+	SDL_Texture* tex = SDL_CreateTextureFromSurface(sm_pRen, sur);
+	if (tex == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() failed to create sdl_texture: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		SDL_FreeSurface(sur);
+		SDL_RWclose(rw);
+		return nullptr;
+	}
+
+	SDL_FreeSurface(sur);
+	SDL_RWclose(rw);
+
+	auto pgu = new(std::nothrow) GraphUnit;
+	if (pgu == nullptr)
+	{
+		std::cout &lt;&lt; "LoadUnitFromMem() couldn't allocate mem for graphunit" &lt;&lt; std::endl;
+		SDL_DestroyTexture(tex);
+		return nullptr;
+	}
+	pgu-&gt;prtSrc = nullptr;
+	pgu-&gt;pTex = tex;
+
+	return pgu;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o377cfd8eaa4c4c648c0bedf8a3dd66b2946" cid="OP106" name="StringToUnit" creation-date="06/13/2021 09:50:36" type="GraphUnit*" type-id="GraphUnit*" visibility="private">
+                  <parameters>
+                    <parameter id="pc161918cf2d84f16917e9d23e873cc2a" name="size" type="SDL_Point*" type-id="SDL_Point*" />
+                    <parameter id="p871a4841e2c64812a7aecb55c53dc0d9" name="ansi_cstr" type="const char*" type-id="const char*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	int wcstr_size = MultiByteToWideChar(CP_ACP, 0, ansi_cstr, -1, nullptr, 0);
+	WCHAR* wcstr = new(std::nothrow) WCHAR[wcstr_size];
+	if (wcstr == nullptr)
+	{
+		std::cout &lt;&lt; "StringToUnit() couldn't allocate mem for wcstr" &lt;&lt; std::endl;
+		return nullptr;
+	}
+	MultiByteToWideChar(CP_ACP, 0, ansi_cstr, -1, wcstr, wcstr_size);
+
+	auto sur = TTF_RenderUNICODE_Solid(sm_pFont, (Uint16*)wcstr, { 255,255,255 });
+	auto tex = SDL_CreateTextureFromSurface(sm_pRen, sur);
+	SDL_FreeSurface(sur);
+
+	TTF_SizeUNICODE(sm_pFont, (Uint16*)wcstr, &amp;size-&gt;x, &amp;size-&gt;y);
+	size-&gt;x /= 4;
+	size-&gt;y /= 4;
+
+	delete[] wcstr;
+
+	auto gu = new(std::nothrow) GraphUnit;
+	if (gu == nullptr)
+	{
+		std::cout &lt;&lt; "StringToUnit() couldn't allocate mem for graphunit" &lt;&lt; std::endl;
+		SDL_DestroyTexture(tex);
+		return nullptr;
+	}
+	gu-&gt;pTex = tex;
+	gu-&gt;prtSrc = nullptr;
+
+	return gu;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5bc59ba88f0345a4870c32e2839bdb0f946" cid="OP107" name="LoadSqUnitPackFromFile" creation-date="06/13/2021 09:50:36" type="GraphUnitPack*" type-id="GraphUnitPack*" visibility="private">
+                  <parameters>
+                    <parameter id="p139ec042e6424e42b536d178705751fa" name="filename" type="const char*" type-id="const char*" />
+                    <parameter id="pbca6148ae4694a77837c4ff0a0349420" name="use_key" type="bool" type-id="bool" />
+                    <parameter id="pf86c1ff7857c44ec8c292354adcd0ae3" name="key" type="SDL_Color" type-id="SDL_Color" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_Surface* sur = SDL_LoadBMP(filename);
+	if (sur == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() couldn't load file: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+	SDL_SetColorKey(sur, use_key, SDL_MapRGB(sur-&gt;format, key.r, key.g, key.b));
+
+	SDL_Texture* tex = SDL_CreateTextureFromSurface(sm_pRen, sur);
+	if (tex == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() failed to create sdl_surface"
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	auto pPack = new(std::nothrow) GraphUnitPack;
+	if (pPack == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() failed to allocate mem for graphunitpack" &lt;&lt; std::endl;
+		SDL_FreeSurface(sur);
+		SDL_DestroyTexture(tex);
+		return nullptr;
+	}
+
+	for (int y = 0; y != sur-&gt;h; y += 16)
+	{
+		for (int x = 0; x != sur-&gt;w; x += 16)
+		{
+			auto pgu = new(std::nothrow) GraphUnit;
+			if (pgu == nullptr)
+			{
+				std::cout
+					&lt;&lt; "LoadSqUnitPackFromFile() failed to allocate mem for graphunit"
+					&lt;&lt; std::endl;
+			}
+			else
+			{
+				pgu-&gt;pTex = tex;
+				pgu-&gt;prtSrc = new(std::nothrow) SDL_Rect;
+				*(pgu-&gt;prtSrc) = { x,y,16,16 };
+				pPack-&gt;vec_pguContent.push_back(pgu);
+			}
+		}
+	}
+
+	SDL_FreeSurface(sur);
+	return pPack;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oed7843ceff6c407aa3ab7431b8a3ca4e947" cid="OP108" name="LoadSqUnitPackFromMem" creation-date="06/13/2021 09:50:36" type="GraphUnitPack*" type-id="GraphUnitPack*" visibility="private">
+                  <parameters>
+                    <parameter id="p6a15619589744aab9d5d5b6d0cc8be6b" name="mem" type="void*" type-id="void*" />
+                    <parameter id="p64a06e4e346c42af92d3b5561137dc6e" name="mem_size" type="unsigned int" type-id="unsigned int" />
+                    <parameter id="pf94fb62322fb48faa606f5cbac2326cc" name="use_key" type="bool" type-id="bool" />
+                    <parameter id="pc227990d47094cfab103c899bbd80b26" name="key" type="SDL_Color" type-id="SDL_Color" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (mem == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromMem() null mem pointer" &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_RWops* rw = SDL_RWFromMem(mem, mem_size);
+	if (rw == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromMem() failed to read mem" &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	SDL_Surface* sur = SDL_LoadBMP_RW(rw, true);                
+	if (sur == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() couldn't load file: "
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+	SDL_SetColorKey(sur, use_key, SDL_MapRGB(sur-&gt;format, key.r, key.g, key.b));
+
+	SDL_Texture* tex = SDL_CreateTextureFromSurface(sm_pRen, sur);
+	if (tex == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() failed to create sdl_surface"
+			&lt;&lt; SDL_GetError() &lt;&lt; std::endl;
+		return nullptr;
+	}
+
+	auto pPack = new(std::nothrow) GraphUnitPack;
+	if (pPack == nullptr)
+	{
+		std::cout &lt;&lt; "LoadSqUnitPackFromFile() failed to allocate mem for graphunitpack" &lt;&lt; std::endl;
+		SDL_FreeSurface(sur);
+		SDL_DestroyTexture(tex);
+		return nullptr;
+	}
+
+	for (int y = 0; y != sur-&gt;h; y += 16)
+	{
+		for (int x = 0; x != sur-&gt;w; x += 16)
+		{
+			auto pgu = new(std::nothrow) GraphUnit;
+			if (pgu == nullptr)
+			{
+				std::cout
+					&lt;&lt; "LoadSqUnitPackFromFile() failed to allocate mem for graphunit"
+					&lt;&lt; std::endl;
+			}
+			else
+			{
+				pgu-&gt;pTex = tex;
+				pgu-&gt;prtSrc = new(std::nothrow) SDL_Rect;
+				*(pgu-&gt;prtSrc) = { x,y,16,16 };
+				pPack-&gt;vec_pguContent.push_back(pgu);
+			}
+		}
+	}
+
+	SDL_FreeSurface(sur);
+	return pPack;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oda81b53347a14c00a0b1025a6ec7666c947" cid="OP109" name="FreeUnit" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p821e366b4187427eb0e341c3fd0a41b1" name="gu" type="GraphUnit*" type-id="GraphUnit*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	delete gu-&gt;prtSrc;
+	SDL_DestroyTexture(gu-&gt;pTex);
+	delete gu;
+	gu = nullptr;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obaa7bc10c41d4a239992a05deb4cf87f947" cid="OP110" name="FreeUnitPack" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pb908e4aa8c734c63be3e8e632100f584" name="gup" type="GraphUnitPack*" type-id="GraphUnitPack*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	                                        
+	SDL_DestroyTexture(gup-&gt;vec_pguContent[0]-&gt;pTex);
+
+	for (auto&amp; pgu : gup-&gt;vec_pguContent)
+	{
+		delete pgu-&gt;prtSrc;
+	}
+
+	delete gup;
+	gup = nullptr;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o9d2773867b0046aaac7a30a5442bafb8947" cid="OP111" name="__IndexToPoint" creation-date="06/13/2021 09:50:36" type="SDL_Point" type-id="SDL_Point" visibility="private">
+                  <parameters>
+                    <parameter id="p8a356a4e260a4f6185d7d928486615ea" name="index" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (index &gt;= SQUARES_COUNT || index &lt; 0)
+	{
+		               
+		return SDL_Point({ -1,-1 });
+	}
+
+	         
+	int x = index % SQUARES_X_COUNT;
+	int y = (index - x) / SQUARES_X_COUNT;
+
+	return SDL_Point({ x,y });
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5e5037bb932847b6bbe713e1a9fd3cf9947" cid="OP112" name="__PointToIndex" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <parameters>
+                    <parameter id="p83a1c52e084a4176b9099a285c83718f" name="pt_x" type="int" type-id="int" />
+                    <parameter id="p875e0f5d3c604208b468c1151ed3af9d" name="pt_y" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	return (pt_y * SQUARES_X_COUNT) + pt_x;
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="9ab03bffdc924819a9450562ddd03543" cid="PROP011" type="property" name="SQUARES_X_COUNT" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="public">
+              <feature static="true" />
+              <structural-feature type="int" type-id="int" />
+              <property default-value="16" />
+            </item>
+            <item id="131fd8e914c14167beef8f8fbf73650d" cid="PROP012" type="property" name="SQUARES_Y_COUNT" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="public">
+              <feature static="true" />
+              <structural-feature type="int" type-id="int" />
+              <property default-value="14" />
+            </item>
+            <item id="a4f1d565423040ceb467f9d84328cf80" cid="PROP013" type="property" name="SQUARES_COUNT" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="public">
+              <feature static="true" />
+              <structural-feature type="int" type-id="int" />
+              <property default-value="SQUARES_X_COUNT * SQUARES_Y_COUNT" />
+            </item>
+            <item id="5fa3c9e482514cbbb4e6799c3254cc08" cid="PROP014" type="property" name="sm_pWin" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="SDL_Window*" type-id="SDL_Window*" />
+              <property />
+            </item>
+            <item id="f929c640d7d74e30b5f08ad231d0ec8d" cid="PROP015" type="property" name="sm_pRen" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="SDL_Renderer*" type-id="SDL_Renderer*" />
+              <property />
+            </item>
+            <item id="d7ca14a2a32c431ab70cd05f437890b8" cid="PROP016" type="property" name="sm_nWinSizeTimes" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="5f6db180dda34a1ba22888f19aef9588" cid="PROP017" type="property" name="sm_pFont" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="TTF_Font*" type-id="TTF_Font*" />
+              <property />
+            </item>
+            <item id="3a241c6eee5348c59ba2b682bc9483e6" cid="C006" type="class" name="InBuffGraphUnit" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <stereotypes>
+                <stereotype name="struct" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tva3f8cdb17a0f44b6839f76f30cb8f9ed" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="3a241c6eee5348c59ba2b682bc9483e6_struct_c" type="struct" ref="" />
+              </stereotype-instances>
+              <owned-items>
+                <owned-item ref="a613e5051e614a48a6c06f46344b2622" />
+                <owned-item ref="972d980bf2734cf19e35128f88f58b7a" />
+              </owned-items>
+              <attributes>
+                <attribute id="a7edc994d401c42afbe020269104ffe52938" cid="PROP018" name="prtDst" creation-date="06/13/2021 09:50:36" property-ref="a613e5051e614a48a6c06f46344b2622" />
+                <attribute id="abb6e601582d24de28df705b8cef348e0938" cid="PROP019" name="pgu" creation-date="06/13/2021 09:50:36" property-ref="972d980bf2734cf19e35128f88f58b7a" />
+              </attributes>
+            </item>
+            <item id="df9fb52614ec4af8858ac04fc6d5d25d" cid="CNT001" type="containment" name="" style-class="" creator="" creation-date="06/13/2021 09:50:36" from="3a241c6eee5348c59ba2b682bc9483e6" to="0a722bb85ff04be5b85b5dd4cd50410d" />
+            <item id="a613e5051e614a48a6c06f46344b2622" cid="PROP018" type="property" name="prtDst" style-class="" owner="3a241c6eee5348c59ba2b682bc9483e6" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="SDL_Rect*" type-id="SDL_Rect*" />
+              <property />
+            </item>
+            <item id="972d980bf2734cf19e35128f88f58b7a" cid="PROP019" type="property" name="pgu" style-class="" owner="3a241c6eee5348c59ba2b682bc9483e6" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="GraphUnit*" type-id="GraphUnit*" />
+              <property />
+            </item>
+            <item id="04eb429b2f9a424d85db9391c975cf4b" cid="PROP020" type="property" name="sm_vec_ibguBuff" style-class="" owner="0a722bb85ff04be5b85b5dd4cd50410d" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="std::vector&lt;InBuffGraphUnit&gt;" type-id="std::vector&lt;InBuffGraphUnit&gt;" />
+              <property />
+            </item>
+            <item id="a25fa3973e784adda2d7a3ba14e1e3e2" cid="C007" type="class" name="Game" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv6e09cc73a375456e988c3f2511f7b33a" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="39b96322a75d46e4876f5557ff3eea85" />
+                <owned-item ref="48479dd19a454cf69cf2b6c7f8cb1de5" />
+                <owned-item ref="6a656e5e3723456db4be1fc4d9f6bd39" />
+                <owned-item ref="de5a004c33c54eada8bbf61788686808" />
+                <owned-item ref="44f1742cf5724cf6a17ed119db557dc9" />
+                <owned-item ref="af2e311907434417886f86ca5aa11f58" />
+                <owned-item ref="e207ed857a2e4531ab53e4765568941d" />
+              </owned-items>
+              <attributes>
+                <attribute id="aadcb517cde5f40929c58022ceb984a9e938" cid="PROP021" name="sm_pgupTex" creation-date="06/13/2021 09:50:36" property-ref="39b96322a75d46e4876f5557ff3eea85" />
+                <attribute id="a611cf3c13c26409c8135b7ef7ace6938938" cid="PROP022" name="sm_unScore" creation-date="06/13/2021 09:50:36" property-ref="48479dd19a454cf69cf2b6c7f8cb1de5" />
+                <attribute id="a0b25b0cd8ab147b783281ec37a6be949938" cid="PROP023" name="sm_bIsInRace" creation-date="06/13/2021 09:50:36" property-ref="6a656e5e3723456db4be1fc4d9f6bd39" />
+                <attribute id="aa1bfb307b32549a9a53c6605ee14c331939" cid="PROP024" name="sm_map_strPos_nTexId" creation-date="06/13/2021 09:50:36" property-ref="de5a004c33c54eada8bbf61788686808" />
+                <attribute id="ade2cfc1c1a504657ad2ffb80ab3b74b9939" cid="PROP025" name="sm_vec_car" creation-date="06/13/2021 09:50:36" property-ref="44f1742cf5724cf6a17ed119db557dc9" />
+                <attribute id="ac0695f725aa54c849a2167531c54a612939" cid="PROP026" name="sm_unDifficulty" creation-date="06/13/2021 09:50:36" property-ref="af2e311907434417886f86ca5aa11f58" />
+                <attribute id="a365b77fe35f44e2fa44dc31418c41421939" cid="PROP027" name="sm_msg" creation-date="06/13/2021 09:50:36" property-ref="e207ed857a2e4531ab53e4765568941d" />
+              </attributes>
+              <operations>
+                <operation id="o69f7ab28df6248d6bcffa5796a7d5638947" cid="OP113" name="Run" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (!__Init())
+	{
+		return -1;
+	}
+
+	bool isRetry = false;
+	while (true)
+	{
+		if (isRetry)
+		{
+			__InRace();
+			if (__EndPage() == 0)
+			{
+				isRetry = true;
+			}
+			else
+			{
+				break;
+			}
+		}
+		else
+		{
+			if (__StartPage() == 0)
+			{
+				isRetry = true;
+			}
+			else
+			{
+				break;
+			}
+		}
+	}
+
+	GraphEngine::FreeUnitPack(sm_pgupTex);
+	return 0;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o993bae8fe68248bba17be7b5d5d72332947" cid="OP114" name="__Init" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	GraphEngine::Init();
+	RandomEngine::Init();
+
+	GraphEngine::ChangeWinTitle(u8"Road Fighter (SK)");
+	GraphEngine::ChangeWinSize(3);
+	sm_pgupTex = GraphEngine::LoadSqUnitPackFromFile("Res/texture.bmp", true, { 255,255,255,255 });
+
+	AudioEngine::Init();
+	return true;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o20148c6ad18848acb5383b53bac6515d947" cid="OP115" name="__StartPage" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	auto cursor_pgu = GraphEngine::LoadUnitFromFile("Res/cursor_gb.bmp", true);
+	SDL_Point start_size;
+	auto start_pgu = GraphEngine::StringToUnit(&amp;start_size, "Start");
+	SDL_Point quit_size;
+	auto quit_pgu = GraphEngine::StringToUnit(&amp;quit_size, "Quit");
+
+	auto sound = AudioEngine::LoadSEAudioFromFile("Res/button.wav");
+
+	int nowSelecting = 0;
+
+	bool keyholding = false;
+	while (true)
+	{
+		GraphEngine::ClearBuff();
+
+		GraphEngine::AddToBuff(96, 128, start_size.x, 16, start_pgu);
+		GraphEngine::AddToBuff(96, 144, quit_size.x, 16, quit_pgu);
+		GraphEngine::AddToBuff(80, 128 + nowSelecting * 16, 16, 16, cursor_pgu);
+
+		SDL_PollEvent(&amp;sm_msg);
+		SDL_Delay(1);
+
+		if (sm_msg.type == SDL_QUIT)
+		{
+			exit(0);
+		}
+
+		if (keyholding)
+		{
+			if (sm_msg.type == SDL_KEYUP)
+			{
+				switch (sm_msg.key.keysym.sym)
+				{
+				case SDLK_DOWN:
+				case SDLK_UP:
+					keyholding = false;
+				default:
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (sm_msg.type == SDL_KEYDOWN)
+			{
+				if (sm_msg.key.keysym.sym == SDLK_DOWN)
+				{
+					nowSelecting++;
+					keyholding = true;
+					sound-&gt;Play();
+				}
+				else if (sm_msg.key.keysym.sym == SDLK_UP)
+				{
+					nowSelecting--;
+					keyholding = true;
+					sound-&gt;Play();
+				}
+				else if (sm_msg.key.keysym.sym == SDLK_RETURN)
+				{
+					sound-&gt;Play();
+					break;
+				}
+
+				if (nowSelecting &gt;= 2)
+				{
+					nowSelecting = 0;
+				}
+				else if (nowSelecting &lt;= -1)
+				{
+					nowSelecting = 1;
+				}
+			}
+		}
+
+		GraphEngine::PresentBuff();
+	}
+
+	GraphEngine::FreeUnit(cursor_pgu);
+	GraphEngine::FreeUnit(start_pgu);
+	GraphEngine::FreeUnit(quit_pgu);
+	AudioEngine::FreeSEAudio(sound);
+	return nowSelecting;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o0f6bf02eaa9047b9a224a2d95ad54f2b947" cid="OP116" name="__InRace" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	sm_unScore = 0;
+	sm_unDifficulty = 1;
+	sm_vec_car.clear();
+	sm_vec_car.emplace_back(sm_pgupTex);
+	sm_vec_car[0].MoveTo(7, 13);
+
+	auto timer = SDL_AddTimer(250, __CycleCB, nullptr);
+
+	AudioEngine::LoadBGMFromFile("Res/ingame.ogg");
+	AudioEngine::PlayBGM();
+	AudioEngine::BGMVolume(100);
+	AudioEngine::SetFinishedBGMCB(__FinshedBGMCB);
+
+	auto crash = AudioEngine::LoadSEAudioFromFile("Res/crash.wav");
+
+	while (true)
+	{
+		GraphEngine::ClearBuff();
+
+		__DrawBackground();
+		__DrawAllCar();
+
+		GraphEngine::PresentBuff();
+
+		if (__IsThereCollision())
+		{
+			crash-&gt;Play();
+			break;
+		}
+		sm_unScore += 1;
+
+		SDL_PollEvent(&amp;sm_msg);
+		SDL_Delay(1);
+		if (sm_msg.type == SDL_QUIT)
+		{
+			exit(0);
+		}
+
+		__ControlPlayerCar();
+	}
+
+	SDL_Delay(500);
+	SDL_RemoveTimer(timer);
+	sm_map_strPos_nTexId.clear();
+	AudioEngine::SetFinishedBGMCB();
+	AudioEngine::FreeSEAudio(crash);
+	AudioEngine::StopBGM();
+	return 	0;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o29fc352469f1469f8b576d46b9d9632a947" cid="OP117" name="__DrawAllCar" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	for (auto&amp; car : sm_vec_car)
+	{
+		car.AddToBuff();
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oacaade0466b646b29649332bd9be1e7b947" cid="OP118" name="__DrawBackground" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_Point tmpPos;
+	for (auto iter = sm_map_strPos_nTexId.begin(); iter != sm_map_strPos_nTexId.end(); iter++)
+	{
+		__StringToPos(iter-&gt;first.c_str(), tmpPos);
+		GraphEngine::AddSquareToBuff(tmpPos.x, tmpPos.y, sm_pgupTex-&gt;vec_pguContent[iter-&gt;second]);
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o01a5010683dd4c37b7d1ff63c7d612d8947" cid="OP119" name="__UpdateBackground" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::string tmpStr;
+	SDL_Point tmpPos;
+
+	if (sm_map_strPos_nTexId.size() &lt; GraphEngine::SQUARES_COUNT)
+	{
+		for (int x = 2; x &lt;= 13; x++)
+		{
+			for (int y = 0; y != 14; y++)
+			{
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(10, 19);
+			}
+		}
+		for (int x = 0; x &lt;= 1; x++)
+		{
+			for (int y = 0; y != 14; y++)
+			{
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+			}
+		}
+		for (int x = 14; x &lt;= 15; x++)
+		{
+			for (int y = 0; y != 14; y++)
+			{
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+			}
+		}
+	}
+	else
+	{
+		std::string tmpStr2;
+
+		for (int x = 0; x &lt;= 1; x++)
+		{
+			for (int y = 13; y != 0; y--)
+			{
+				tmpPos = { x,y - 1 };
+				__PosToString(tmpStr2, tmpPos);
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = sm_map_strPos_nTexId[tmpStr2];
+			}
+		}
+		for (int x = 14; x &lt;= 15; x++)
+		{
+			for (int y = 13; y != 0; y--)
+			{
+				tmpPos = { x,y - 1 };
+				__PosToString(tmpStr2, tmpPos);
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = sm_map_strPos_nTexId[tmpStr2];
+			}
+		}
+		tmpPos = { 0,0 };
+		__PosToString(tmpStr, tmpPos);
+		sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+		tmpPos = { 1,0 };
+		__PosToString(tmpStr, tmpPos);
+		sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+		tmpPos = { 14,0 };
+		__PosToString(tmpStr, tmpPos);
+		sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+		tmpPos = { 15,0 };
+		__PosToString(tmpStr, tmpPos);
+		sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(0, 9);
+
+		for (int x = 2; x &lt;= 13; x++)
+		{
+			for (int y = 13; y != 0; y--)
+			{
+				tmpPos = { x,y - 1 };
+				__PosToString(tmpStr2, tmpPos);
+				tmpPos = { x,y };
+				__PosToString(tmpStr, tmpPos);
+				sm_map_strPos_nTexId[tmpStr] = sm_map_strPos_nTexId[tmpStr2];
+			}
+		}
+		for (int x = 2; x &lt;= 13; x++)
+		{
+			tmpPos = { x,0 };
+			__PosToString(tmpStr, tmpPos);
+			sm_map_strPos_nTexId[tmpStr] = RandomEngine::UniformRange(10, 19);
+		}
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o630b366bb902495a9541b2cf5ab108f8947" cid="OP120" name="__GenerateOnRoadCar" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (sm_vec_car.size() &lt; 4 * sm_unDifficulty)
+	{
+		Car car(sm_pgupTex);
+		car.IsPlayer(false);
+
+		int delta = (4 * sm_unDifficulty - sm_vec_car.size());
+		if (delta &gt; 80)
+		{
+			delta = 40;
+		}
+		while (delta &gt; 0)
+		{
+			if (RandomEngine::UniformRange(0, 9) &gt; 8)
+			{
+				bool isSameBlock = false;
+				int tmpX = RandomEngine::UniformRange(2, 13);
+
+				for (auto iter = sm_vec_car.end() - 1; iter != sm_vec_car.begin(); iter--)
+				{
+					if (iter-&gt;GetPos().x == tmpX &amp;&amp; iter-&gt;GetPos().y == 0)
+					{
+						isSameBlock = true;
+						break;
+					}
+				}
+				if (!isSameBlock)
+				{
+					sm_vec_car.push_back(car);
+					(*(sm_vec_car.end() - 1)).MoveTo(tmpX, 0);
+					(*(sm_vec_car.end() - 1)).SetTexId(RandomEngine::UniformRange(21, 29));
+				}
+			}
+			if (sm_vec_car.size() &gt;= 150)
+			{
+				break;
+			}
+			delta--;
+		}
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa5850846574f4b00853f920920d5fe70947" cid="OP121" name="__DeleteOutsideOnRoadCar" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	auto iter = sm_vec_car.begin() + 1;
+	while (iter != sm_vec_car.end())
+	{
+		if (iter-&gt;GetPos().y &gt;= 14)
+		{
+			iter = sm_vec_car.erase(iter);
+		}
+		else
+		{
+			iter++;
+		}
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o53f753330c8945298666993cebd909fa947" cid="OP122" name="__MoveOnRoadCar" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	for (auto&amp; car : sm_vec_car)
+	{
+		if (!car.IsPlayer())
+		{
+			car.Move(0, 1);
+		}
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob8b404224f334915a2b7a5068ab23c50947" cid="OP123" name="__ControlPlayerCar" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+
+	static bool isHoldingKey = false;
+
+	if (isHoldingKey)
+	{
+		if (sm_msg.type == SDL_KEYUP)
+		{
+			switch (sm_msg.key.keysym.sym)
+			{
+			case SDLK_LEFT:
+			case SDLK_RIGHT:
+				isHoldingKey = false;
+				return;
+
+			default:
+				break;
+			}
+		}
+	}
+	else
+	{
+		if (sm_msg.type == SDL_KEYDOWN)
+		{
+			switch (sm_msg.key.keysym.sym)
+			{
+			case SDLK_LEFT:
+				(*(sm_vec_car.begin())).Move(-1, 0);
+				isHoldingKey = true;
+				break;
+			case SDLK_RIGHT:
+				(*(sm_vec_car.begin())).Move(1, 0);
+				isHoldingKey = true;
+				break;
+			default:
+				break;
+			}
+		}
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o0507a584b25b44989cbe71c7460d9950948" cid="OP124" name="__IsThereCollision" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	auto playerPos = sm_vec_car[0].GetPos();
+
+	if (playerPos.x &lt;= 1 || playerPos.x &gt;= 14)
+	{
+		return true;
+	}
+
+	for (auto&amp; car : sm_vec_car)
+	{
+		if (!car.IsPlayer())
+		{
+			if (car.GetPos().x == playerPos.x &amp;&amp; car.GetPos().y == playerPos.y)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oac230e26524c4e57abf8327b01e9acde948" cid="OP125" name="__CycleCB" creation-date="06/13/2021 09:50:36" type="Uint32" type-id="Uint32" visibility="private">
+                  <parameters>
+                    <parameter id="pd1b1f6ccd4664354b8c6081ed58cc874" name="interval" type="Uint32" type-id="Uint32" />
+                    <parameter id="p7ecb0f49393e452995875d9572e9f9c1" name="praram" type="void*" type-id="void*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	__UpdateBackground();
+
+	__GenerateOnRoadCar();
+
+	__MoveOnRoadCar();
+
+	__DeleteOutsideOnRoadCar();
+
+	sm_unDifficulty = static_cast&lt;int&gt;(sm_unScore / 1000) + 1;
+
+	const Uint32 default_interval = 250;
+	if (sm_unDifficulty &gt; 10)
+	{
+		return Uint32(150);
+	}
+	else
+	{
+		return default_interval - (10 * sm_unDifficulty);
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o3b270d72bfa2435c8fdc4b5a3b49931c948" cid="OP126" name="__FinshedBGMCB" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	AudioEngine::PlayBGM();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob2378c016296401ead4bf4b5f2cabced948" cid="OP127" name="__EndPage" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	SDL_Point again_size;
+	auto again_pgu = GraphEngine::StringToUnit(&amp;again_size, "Retry");
+	SDL_Point quit_size;
+	auto quit_pgu = GraphEngine::StringToUnit(&amp;quit_size, "Quit");
+	auto cursor_pgu = GraphEngine::LoadUnitFromFile("Res/cursor_gb.bmp", true);
+
+	auto sound = AudioEngine::LoadSEAudioFromFile("Res/button.wav");
+	AudioEngine::LoadBGMFromFile("Res/fail.ogg");
+	AudioEngine::PlayBGM(500);
+	AudioEngine::BGMVolume(64);
+
+	SDL_Point text_size;
+	std::string scoreText = "Your score: ";
+	std::string scoreNum;
+	__IntToString(scoreNum, sm_unScore);
+	scoreText += scoreNum;
+	auto text_pgu = GraphEngine::StringToUnit(&amp;text_size, scoreText.c_str());
+
+	int nowSelecting = 0;
+
+	bool keyholding = false;
+	while (true)
+	{
+		GraphEngine::ClearBuff();
+
+		GraphEngine::AddToBuff(96, 128, again_size.x, 16, again_pgu);
+		GraphEngine::AddToBuff(96, 144, quit_size.x, 16, quit_pgu);
+		GraphEngine::AddToBuff(80, 128 + nowSelecting * 16, 16, 16, cursor_pgu);
+		GraphEngine::AddToBuff(0, 0, text_size.x, text_size.y, text_pgu);
+
+		SDL_PollEvent(&amp;sm_msg);
+		SDL_Delay(1);
+		if (sm_msg.type == SDL_QUIT)
+		{
+			exit(0);
+		}
+
+		if (keyholding)
+		{
+			if (sm_msg.type == SDL_KEYUP)
+			{
+				switch (sm_msg.key.keysym.sym)
+				{
+				case SDLK_DOWN:
+				case SDLK_UP:
+					keyholding = false;
+				default:
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (sm_msg.type == SDL_KEYDOWN)
+			{
+				if (sm_msg.key.keysym.sym == SDLK_DOWN)
+				{
+					nowSelecting++;
+					keyholding = true;
+					sound-&gt;Play();
+				}
+				else if (sm_msg.key.keysym.sym == SDLK_UP)
+				{
+					nowSelecting--;
+					keyholding = true;
+					sound-&gt;Play();
+				}
+				else if (sm_msg.key.keysym.sym == SDLK_RETURN)
+				{
+					sound-&gt;Play();
+					GraphEngine::FreeUnit(again_pgu);
+					GraphEngine::FreeUnit(quit_pgu);
+					GraphEngine::FreeUnit(cursor_pgu);
+					break;
+				}
+
+				if (nowSelecting &gt;= 2)
+				{
+					nowSelecting = 0;
+				}
+				else if (nowSelecting &lt;= -1)
+				{
+					nowSelecting = 1;
+				}
+			}
+		}
+
+		GraphEngine::PresentBuff();
+	}
+
+	AudioEngine::StopBGM();
+	AudioEngine::FreeSEAudio(sound);
+	GraphEngine::FreeUnit(cursor_pgu);
+	GraphEngine::FreeUnit(quit_pgu);
+	GraphEngine::FreeUnit(again_pgu);
+	return nowSelecting;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="off1517a0c8bf4b3b88fec8cc1c26aec8948" cid="OP128" name="__StringToPos" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pee4a56d666784709812a77db637b3c75" name="cstr" type="const char*" type-id="const char*" />
+                    <parameter id="p19a29ee0a1a3450a9b8c41d01262274f" name="ptPos" type="SDL_Point&amp;" type-id="SDL_Point&amp;" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::stringstream ss;
+	ss.str(cstr);
+	ss &gt;&gt; ptPos.x;
+	ss &gt;&gt; ptPos.y;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="of1a1aaa56db0435f8ea8c8a4f1341ddb948" cid="OP129" name="__PosToString" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p9026185b106d496c8e7038972c3d7c9a" name="str" type="std::string&amp;" type-id="std::string&amp;" />
+                    <parameter id="p84f9654660e341b7b1f3aeb6c842b66f" name="ptPos" type="SDL_Point" type-id="SDL_Point" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::stringstream ss;
+	ss &lt;&lt; ptPos.x &lt;&lt; ' ' &lt;&lt; ptPos.y;
+	str.assign(ss.str());
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o9be2b32a2cd441379d558799b230f7f5948" cid="OP130" name="__IntToString" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="pa01f9f7c49e448a08250e379ba48b10d" name="str" type="std::string&amp;" type-id="std::string&amp;" />
+                    <parameter id="p30622d0ddce1470c85f94016775e61ae" name="num" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::stringstream ss;
+	ss &lt;&lt; num;
+	str.assign(ss.str());
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="39b96322a75d46e4876f5557ff3eea85" cid="PROP021" type="property" name="sm_pgupTex" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="GraphUnitPack*" type-id="GraphUnitPack*" />
+              <property />
+            </item>
+            <item id="48479dd19a454cf69cf2b6c7f8cb1de5" cid="PROP022" type="property" name="sm_unScore" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="unsigned int" type-id="unsigned int" />
+              <property />
+            </item>
+            <item id="6a656e5e3723456db4be1fc4d9f6bd39" cid="PROP023" type="property" name="sm_bIsInRace" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="de5a004c33c54eada8bbf61788686808" cid="PROP024" type="property" name="sm_map_strPos_nTexId" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="std::map&lt;std::string, int&gt;" type-id="std::map&lt;std::string, int&gt;" />
+              <property />
+            </item>
+            <item id="44f1742cf5724cf6a17ed119db557dc9" cid="PROP025" type="property" name="sm_vec_car" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="std::vector&lt;Car&gt;" type-id="std::vector&lt;Car&gt;" />
+              <property />
+            </item>
+            <item id="af2e311907434417886f86ca5aa11f58" cid="PROP026" type="property" name="sm_unDifficulty" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="unsigned int" type-id="unsigned int" />
+              <property />
+            </item>
+            <item id="e207ed857a2e4531ab53e4765568941d" cid="PROP027" type="property" name="sm_msg" style-class="" owner="a25fa3973e784adda2d7a3ba14e1e3e2" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="SDL_Event" type-id="SDL_Event" />
+              <property />
+            </item>
+            <item id="74bab4b4dc4b4dcc9fbf61cb34ba31d3" cid="C008" type="class" name="RandomEngine" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <tagged-values>
+                <tagged-value id="tve5472e369a164f7586a2dd87cb91ac2a" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="5f751177f78c48f0a4445237c20be47a" />
+              </owned-items>
+              <attributes>
+                <attribute id="a1a8240be87bb479a9b79ae946615b0ac939" cid="PROP028" name="sm_dre" creation-date="06/13/2021 09:50:36" property-ref="5f751177f78c48f0a4445237c20be47a" />
+              </attributes>
+              <operations>
+                <operation id="od77f82fd1df143e08c3c02c569b32484951" cid="OP132" name="Init" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	sm_dre.seed((unsigned int)&amp;sm_dre);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="od6da96ad887c418faba85591225a24e7951" cid="OP133" name="UniformRange" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <parameters>
+                    <parameter id="p3b44237b06c6469d9b1d4f1dd6d5846f" name="min" type="int" type-id="int" />
+                    <parameter id="p215bf15afe104e4dac0e72d5e594bec3" name="max" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::uniform_int_distribution&lt;int&gt; d(min, max);
+	return d(sm_dre);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o0d9e88621ead4cfe8ac2ae872b12ceaa951" cid="OP134" name="NormalRange" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <parameters>
+                    <parameter id="pd89f327a734d43f398f217922844f49e" name="mu" type="int" type-id="int" />
+                    <parameter id="p09ef632ad55b4959bfbcc39afef0a9b4" name="sigma" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::normal_distribution&lt;&gt;d(mu, sigma);
+	return static_cast&lt;int&gt;(d(sm_dre));
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o35836e84980b4652ac652c560c39154e951" cid="OP135" name="Half" creation-date="06/13/2021 09:50:36" type="bool" type-id="bool" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	std::uniform_int_distribution&lt;int&gt; d(0, 1);
+	if (d(sm_dre) == 1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o11ffdbc9c0944c20902b160cd52937d7951" cid="OP136" name="SetNewSeed" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	sm_dre.seed(SDL_GetTicks());
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc0fbd9dffaae493ab9c2ec6ed1b6a120951" cid="OP137" name="SetNewSeed" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p7908769a303443289c4ac27aa9306d56" name="seed" type="unsigned int" type-id="unsigned int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	sm_dre.seed(seed);
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="5f751177f78c48f0a4445237c20be47a" cid="PROP028" type="property" name="sm_dre" style-class="" owner="74bab4b4dc4b4dcc9fbf61cb34ba31d3" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature static="true" />
+              <structural-feature type="std::default_random_engine" type-id="std::default_random_engine" />
+              <property />
+            </item>
+            <item id="c7a77694054f4852ae89255cbe5b67fd" cid="C009" type="class" name="SEAudio" style-class="" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv3fd01825ac44443c8517d692a7d85340" name="namespace" type="text" multiple="false" value="" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="588f07fa77e14056a71bec69a1a648b0" />
+                <owned-item ref="87501db18e8440e5b0e89a578ccae7f3" />
+                <owned-item ref="a2b20cbd163c49708dd52973a81bc166" />
+                <owned-item ref="ca031bc1254b4359b71a0f8777798d92" />
+              </owned-items>
+              <attributes>
+                <attribute id="a02e593d9c6234b78a060166ba156d32c940" cid="PROP029" name="m_pChunk" creation-date="06/13/2021 09:50:36" property-ref="588f07fa77e14056a71bec69a1a648b0" />
+                <attribute id="aa95e45418dc74921a541c37b6d364722940" cid="PROP030" name="m_nChannel" creation-date="06/13/2021 09:50:36" property-ref="87501db18e8440e5b0e89a578ccae7f3" />
+                <attribute id="a53c15cb1b5994a44b2f0dede8947db2e940" cid="PROP031" name="m_nPosAngle" creation-date="06/13/2021 09:50:36" property-ref="a2b20cbd163c49708dd52973a81bc166" />
+                <attribute id="a8ea749b0206742c786edc7564acdaf59940" cid="PROP032" name="m_nPosDistance" creation-date="06/13/2021 09:50:36" property-ref="ca031bc1254b4359b71a0f8777798d92" />
+              </attributes>
+              <operations>
+                <operation id="o87d901cb8ba44b6592a3c41cc16d8091940" cid="OP067" name="SEAudio" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p71e6e77ff5ad42389f4602a6a0ebfe93" name="pChunk" type="Mix_Chunk*" type-id="Mix_Chunk*" />
+                    <parameter id="p6d0bc762e3c24031a554e776cf388cef" name="channel" type="int" type-id="int" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o885b6a731196442d97f556d850c9de73940" cid="OP076" name="FreeChunk" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="public" />
+                <operation id="offddca332f734be385c00617bd811492951" cid="OP138" name="Play" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	if (m_pChunk != nullptr)
+	{
+		if (!Mix_Playing(m_nChannel))
+		{
+			Mix_PlayChannel(m_nChannel, m_pChunk, 0);
+		}
+	}
+	else
+	{
+		std::cout &lt;&lt; "SEAudio::Play() m_pChunk is null pointer." &lt;&lt; std::endl;
+	}
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o4ac3678e3f434d2a9425551adf29d74e951" cid="OP139" name="Pause" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_Pause(m_nChannel);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o70fc4ae393f94c1b87e97cfc8bd6cab9951" cid="OP140" name="Resume" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_Resume(m_nChannel);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o56b89abf1f3243598e96ba446b7d04c1951" cid="OP141" name="Stop" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_HaltChannel(m_nChannel);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oeec23739706e487a8054b903003d3f7c951" cid="OP142" name="SetPosition" creation-date="06/13/2021 09:50:36" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p5f7d13e8102c47819514db1129ee1567" name="angle" type="int" type-id="int" />
+                    <parameter id="p9dbe1d95aace4565bc56eab0e9d8f4c1" name="distance" type="int" type-id="int" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	Mix_SetPosition(m_nChannel, angle, distance);
+	m_nPosAngle = angle;
+	m_nPosDistance = distance;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o2c0a247019044fe2be90973a9a92d71d951" cid="OP143" name="GetPositionAngle" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return m_nPosAngle;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o4288626950a94a988d2fadf79137d592951" cid="OP144" name="GetPositionDistance" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return m_nPosDistance;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o0385ef157cf341188328c7f4b9d3e9df951" cid="OP145" name="GetChannel" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <source-codes>
+                    <source-code language="Cpp">
+	return m_nChannel;
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="588f07fa77e14056a71bec69a1a648b0" cid="PROP029" type="property" name="m_pChunk" style-class="" owner="c7a77694054f4852ae89255cbe5b67fd" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="Mix_Chunk*" type-id="Mix_Chunk*" />
+              <property />
+            </item>
+            <item id="87501db18e8440e5b0e89a578ccae7f3" cid="PROP030" type="property" name="m_nChannel" style-class="" owner="c7a77694054f4852ae89255cbe5b67fd" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="a2b20cbd163c49708dd52973a81bc166" cid="PROP031" type="property" name="m_nPosAngle" style-class="" owner="c7a77694054f4852ae89255cbe5b67fd" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="ca031bc1254b4359b71a0f8777798d92" cid="PROP032" type="property" name="m_nPosDistance" style-class="" owner="c7a77694054f4852ae89255cbe5b67fd" creator="" creation-date="06/13/2021 09:50:36" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="60398fa2e3544fdaafcf8caaf961db3b" cid="C010" type="class" name="Main" style-class="" creator="" creation-date="06/13/2021 09:50:36">
+              <stereotypes>
+                <stereotype name="main" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="60398fa2e3544fdaafcf8caaf961db3b_main_c" type="main" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="o59c2be921fd2431d89650af0cf398358951" cid="OP131" name="main" creation-date="06/13/2021 09:50:36" type="int" type-id="int" visibility="private">
+                  <parameters>
+                    <parameter id="p2c719e2070814eef862da76cd2788c9a" name="argc" type="int" type-id="int" />
+                    <parameter id="pe2305adb1fd84dfe832ed2993024ac39" name="argv" type="char*" type-id="char*" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="Cpp">
+	return Game::Run();
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="pc7c2fb6095b54cb3819b159a701db5b3_896396757" name="" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-135,-135">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>06/13/2021 09:50:37</creation-date>
+              <change-date>06/13/2021 09:50:37</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items />
+            <layer id="a3fde0a95a8b42ea87753d008f22c0d1" name="Default" visible="true" enabled="true" locked="false">
+              <item id="5ec20ff3285f4aa3b03750bfba5b9b55" iid="279a0f52c6ba402a96cf494f93421172" creation-date="06/13/2021 09:50:37" order-index="0" type="entity">
+                <layout ax="1130" ay="0" awidth="352" aheight="444" x="1130" y="0" width="352" height="444" />
+                <class />
+              </item>
+              <item id="ea48023f175e4a52b63546f18dfeabbc" iid="cde31a1828614b4f8bd4122320dfad1d" creation-date="06/13/2021 09:50:37" order-index="1" type="entity">
+                <layout ax="375" ay="0" awidth="241" aheight="274" x="375" y="0" width="241" height="274" />
+                <class />
+              </item>
+              <item id="7a50e0c6923b4007a29d950254649a6f" iid="44ba09c5da794122bcb01f98f66521d0" creation-date="06/13/2021 09:50:37" order-index="2" type="entity">
+                <layout ax="636" ay="0" awidth="128" aheight="99" x="636" y="0" width="128" height="99" />
+                <class />
+              </item>
+              <item id="0c596a0e11d04691957fd47d63a25b47" iid="96e7eec0186347f694d2b890b6ca896b" creation-date="06/13/2021 09:50:37" order-index="3" type="entity">
+                <layout ax="600" ay="612" awidth="265" aheight="80" x="600" y="612" width="265" height="80" />
+                <class />
+              </item>
+              <item id="0a722bb85ff04be5b85b5dd4cd50410d" iid="d933c66eb4c64b2e922f1613b21f5009" creation-date="06/13/2021 09:50:37" order-index="4" type="entity">
+                <layout ax="0" ay="0" awidth="355" aheight="758" x="0" y="0" width="355" height="758" />
+                <class />
+              </item>
+              <item id="3a241c6eee5348c59ba2b682bc9483e6" iid="cf5364a5faea4a6b8114875ac54003ea" creation-date="06/13/2021 09:50:37" order-index="5" type="entity">
+                <layout ax="110.5" ay="858" awidth="134" aheight="99" x="110.5" y="858" width="134" height="99" />
+                <class />
+              </item>
+              <item id="a25fa3973e784adda2d7a3ba14e1e3e2" iid="348b37d745a84b1b8dded3078b99d3b7" creation-date="06/13/2021 09:50:37" order-index="6" type="entity">
+                <layout ax="784" ay="0" awidth="326" aheight="521" x="784" y="0" width="326" height="521" />
+                <class />
+              </item>
+              <item id="74bab4b4dc4b4dcc9fbf61cb34ba31d3" iid="2ca05d8d826b46b794e0b1780c7ac01b" creation-date="06/13/2021 09:50:37" order-index="7" type="entity">
+                <layout ax="375" ay="413" awidth="245" aheight="179" x="375" y="413" width="245" height="179" />
+                <class />
+              </item>
+              <item id="c7a77694054f4852ae89255cbe5b67fd" iid="2ce19b04d3164a2dbe4b307b4b10a08d" creation-date="06/13/2021 09:50:37" order-index="8" type="entity">
+                <layout ax="885" ay="612" awidth="340" aheight="312" x="885" y="612" width="340" height="312" />
+                <class />
+              </item>
+              <item id="60398fa2e3544fdaafcf8caaf961db3b" iid="fdf56145b7644cd8abaf2bb5d9d95d2a" creation-date="06/13/2021 09:50:37" order-index="9" type="entity">
+                <layout ax="375" ay="612" awidth="205" aheight="73" x="375" y="612" width="205" height="73" />
+                <class />
+              </item>
+              <item id="df9fb52614ec4af8858ac04fc6d5d25d" iid="8511f71c8d6942d288759dd052ccacad" creation-date="06/13/2021 09:50:37" order-index="10" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="178" y1="858" x2="179" y2="758" start-border-pos="0.125429104477612" end-border-pos="0.624149295774648" name-position="0,20">
+                  <points>
+                    <point x="178" y="858" />
+                    <point x="178" y="808" />
+                    <point x="178" y="808" />
+                    <point x="179" y="758" />
+                  </points>
+                </layout>
+                <relation from="3a241c6eee5348c59ba2b682bc9483e6" from-iid="cf5364a5faea4a6b8114875ac54003ea" to="0a722bb85ff04be5b85b5dd4cd50410d" to-iid="d933c66eb4c64b2e922f1613b21f5009" />
+              </item>
+            </layer>
+          </diagram>
+          <diagram type="uml-composite-structure" id="p8d02db04d966412db9a5e0d856e6b41f_253354271" name="CompositeStructureDiagram1" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="0,-14">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="solid" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>06/13/2021 10:11:44</creation-date>
+              <change-date>06/13/2021 10:11:44</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items />
+            <layer id="fbfb799ad0d14ef397a4a0229529a403" name="Default" visible="true" enabled="true" locked="false" />
+          </diagram>
+          <diagram type="uml-deployment" id="p234a00e488c54359b9d1d00c53ee148b_421856992" name="DeploymentDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="0,-14">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="solid" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>06/13/2021 10:12:51</creation-date>
+              <change-date>06/13/2021 10:12:51</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items />
+            <layer id="4f4ae3007e8045f9936d6112f9ce3167" name="Default" visible="true" enabled="true" locked="false" />
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p5df0c261df8b412da955ef64455bcf13_232190397" name="Packages" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/13/2021 09:50:37</creation-date>
+          <change-date>06/13/2021 09:50:37</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="1314568c48484da2aa2654c62bf16302" name="Default" visible="true" enabled="true" locked="false">
+          <item id="83853bc2b0e042a0bbbf5eb0a24ffb32" iid="a5ab07c83a4c46a9a9b2ebbfffc03516" creation-date="06/13/2021 09:50:37" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="320" aheight="220" x="0" y="0" width="320" height="220" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

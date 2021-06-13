@@ -1,3 +1,5 @@
+// Saliha Durrani (2020427)
+
 #pragma once
 #include <SDL_ttf.h>
 #include "Common.h"

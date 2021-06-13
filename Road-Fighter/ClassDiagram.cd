@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="AudioEngine">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACABCgAQAQCCCEUAAAAAgAAAAgAAAAADAAAAARA=</HashCode>
+      <FileName>AudioEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAJQAAAAAAAAAAAwAAQAIAAAAAABAgAAAAAA=</HashCode>
+      <FileName>Car.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphEngine" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAEgCAAAAQCAABAIABAAEAABAAAJAQCACVAAQA=</HashCode>
+      <FileName>Engine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAJBAFAEAAABAAAABABABAAAaAQAAQEAAQAwICI=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RandomEngine" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAEABAAAAAAAAAAAAAAAEAAAAACAAAAAgA=</HashCode>
+      <FileName>RandomEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEAudio" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAAIAEAAAAAAAAAAAAAQAAAJAiAAogAAAggIAAA=</HashCode>
+      <FileName>SEAudio.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GraphUnit" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAA=</HashCode>
+      <FileName>Common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GraphUnitPack" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

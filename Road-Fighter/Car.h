@@ -1,3 +1,5 @@
+// Muhammad Noshair Imtiaz (2020334)
+
 #pragma once
 #include <SDL.h>
 #include "Common.h"
